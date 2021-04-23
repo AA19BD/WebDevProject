@@ -1,0 +1,35 @@
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    cursor: pointer;
+    width:250px;
+    background-color: aquamarine;
+    border: 2px solid rgb(7, 207, 34);
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: rgb(83, 83, 102);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color linear .2s;
+    margin:10px 20px;
+}
+
+.card:hover{
+    background-color: rgb(46, 255, 109);;
+}
+
+.name{
+    color:rgb(9, 11, 160);
+    font-size: 26px;
+    border-bottom: 1px solid rgb(9, 11, 160);
+    margin-bottom: 10px;
+}
+
+.header{
+    text-align: center;
+    margin:50px 0;
+}

@@ -1,0 +1,20 @@
+.title{
+    color:rgb(9, 11, 160);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.info{
+    color: rgb(83, 83, 102);
+    margin:10px 0;
+}
+
+.type{
+    font-weight: 500;
+    color:rgb(5, 6, 56);
+}
+
+.imgbox{
+    margin-bottom: 20px;
+}

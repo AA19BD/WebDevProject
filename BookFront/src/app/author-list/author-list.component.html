@@ -1,0 +1,8 @@
+<div class="header"><h1>Authors</h1></div>
+<div class="container">
+    <div class="box" *ngFor='let author of authors'>
+        <div class="name"><span class="type">Name: </span>{{author.name}}</div>
+        <div class="info"><span class="type">ID: </span>{{author.id}}</div>
+        <div class="books"><a routerLink="/authors/{{author.id}}/books" class="type">Books</a></div>
+    </div>
+</div>

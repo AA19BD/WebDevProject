@@ -1,0 +1,8 @@
+<div class="header"><h1>{{author.name}} books</h1></div>
+<div class="container">
+    <div class="card" routerLink="/books/{{book.id}}" *ngFor="let book of books">
+        <div class="name">{{book.name}}</div>
+        <div class="info"><span class="type">Description: </span>{{book.description}}</div>
+        <div class="info"><span class="type">Rating: </span>{{book.rating}}</div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<h1>Books</h1>
+<div class="book-item" *ngFor="let b of books" (click)="selectBook(b)">{{b.name}}</div>
+<button class="add-nav" (click)="createNew()">Create new</button>
+<div class="formupd" *ngIf="selected">
+    <div><input type="text" [(ngModel)]='book.name' value="{{book.name}}"></div>
+    <div><input type="text" [(ngModel)]='book.description' value="{{book.description}}"></div>
+    <div><input type="number" [(ngModel)]='book.rating' value="{{book.rating}}"></div>
+    <div><input type="text" [(ngModel)]='book.status' value="{{book.status}}"></div>
+    <div>
+        <select [(ngModel)]='book.category_id'>
+            <option *ngFor="let category of categories"  [ngValue]="category.id">{{category.name}}</option>
+        </select>
+    </div>
+    <div>
+        <select [(ngModel)]='book.author_id'>
+            <option *ngFor="let author of authors" [ngValue]="author.id">{{author.name}}</option>
+        </select>
+    </div>
+    <button class="save" (click)="updateBook()">Save</button>
+    <button class="delete" (click)="deleteBook()">Delete</button>
+</div>
+<div class="formadd" *ngIf="!selected">
+    <input type="text" [(ngModel)]="newBook.name">
+    <div><input type="text" [(ngModel)]='newBook.description' value="{{newBook.description}}"></div>
+    <div><input type="number" [(ngModel)]='newBook.rating' value="{{newBook.rating}}"></div>
+    <div><input type="text" [(ngModel)]='newBook.status' value="{{newBook.status}}"></div>
+    <div>
+        <select [(ngModel)]='newBook.category_id'>
+            <option *ngFor="let category of categories"  [ngValue]="category.id">{{category.name}}</option>
+        </select>
+    </div>
+    <div>
+        <select [(ngModel)]='newBook.author_id'>
+            <option *ngFor="let author of authors"  [ngValue]="author.id">{{author.name}}</option>
+        </select>
+    </div>
+    <button class="add" (click)="createBook()">Add</button>
+</div>

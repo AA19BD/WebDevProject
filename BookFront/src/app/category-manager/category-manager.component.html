@@ -1,0 +1,12 @@
+<h1>Categories</h1>
+<div class="category-item" *ngFor="let cat of categories" (click)="selectCategory(cat)">{{cat.name}}</div>
+<button class="add-nav" (click)="createNew()">Create new</button>
+<div class="formupd" *ngIf="selected">
+    <input type="text" [(ngModel)]="category.name">
+    <button class="save" (click)="updateCategory()">Save</button>
+    <button class="delete" (click)="deleteCategory()">Delete</button>
+</div>
+<div class="formadd" *ngIf="!selected">
+    <input type="text" [(ngModel)]="newCategory.name">
+    <button class="add" (click)="createCategory()">Add</button>
+</div>

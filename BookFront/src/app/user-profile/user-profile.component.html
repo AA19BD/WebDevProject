@@ -1,0 +1,14 @@
+<h1>My Profile</h1>
+<div class="username">{{profile.user.username}}</div>
+<div class="id">{{profile.id}}</div>
+<div class="name">{{profile.name}}</div>
+<div class="books">
+    <div class="book" *ngFor="let book of books">
+        <div class="bookname">{{book.name}}</div>
+        <button (click)="deleteBook(book.id)" class="delete">Delete</button>
+    </div>
+</div>
+<div class="form">
+    <input type="text" [(ngModel)]="profile.name">
+    <button class="save" (click)="save()">Save</button>
+</div>

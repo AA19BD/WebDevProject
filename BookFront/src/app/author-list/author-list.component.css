@@ -1,0 +1,52 @@
+.name{
+    color:rgb(9, 11, 160);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info{
+    color: rgb(83, 83, 102);
+    margin:10px 0;
+}
+
+.type{
+    font-weight: 500;
+    color:rgb(5, 6, 56);
+}
+
+.box{
+    cursor: pointer;
+    width:250px;
+    background-color: aquamarine;
+    border: 2px solid rgb(7, 207, 34);
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: rgb(83, 83, 102);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color linear .2s;
+    margin:10px 20px;
+}
+
+.books{
+    cursor: pointer;
+    font-weight: 500;
+    color:rgb(5, 6, 56);
+    margin:10px 0;
+}
+
+.header{
+    text-align: center;
+    margin:50px 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box:hover{
+    background-color: rgb(46, 255, 109);;
+}

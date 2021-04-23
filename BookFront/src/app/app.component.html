@@ -1,0 +1,31 @@
+<div *ngIf="!logged">
+    <div class="form">
+        <div class="username">
+            <input type="text" [(ngModel)]='username'>
+        </div>
+        <div class="password">
+            <input type="password" [(ngModel)]='password'>
+        </div>
+        <button (click)="login()">Login</button>
+    </div>
+</div>
+<div *ngIf="logged">
+    <div class="top_bar">
+        <div class="left_navs">
+            <div class="link" routerLink="/book-manager">Book Manager</div>
+            <div class="link" routerLink="/category-manager">Category Manager</div>
+            <div class="link" routerLink="/author-manager">Author Manager</div>
+            <div class="link" routerLink="/books">All books</div>
+            <div class="link" routerLink="/top-books">Top Books</div>
+            <div class="link" routerLink="/categories">Categories</div>
+            <div class="link" routerLink="/authors">Authors</div>
+        </div>
+        <div class="right_navs">
+            <a routerLink="/profile" class="user">{{user.username}}</a>
+            <button  class="logout" (click)="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

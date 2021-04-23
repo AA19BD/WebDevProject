@@ -1,0 +1,26 @@
+<h1>Authors</h1>
+<div class="big-container">
+    <div class="container">
+        <div class="box" *ngFor="let a of authors" (click)="selectAuthor(a)">
+            <div class="name"><span class="type">Name: </span>{{a.name}}</div>
+            <div class="info"><span class="type">ID: </span>{{a.id}}</div>
+            <div class="books"><a routerLink="/authors/{{a.id}}/books" class="type">Books</a></div>
+        </div>
+    </div>
+    <div class="right-container">
+        <button class="add-nav" (click)="createNew()">Create new</button>
+        <div class="formupd" *ngIf="selected">
+            <input type="text" [(ngModel)]="author.name">
+            <div class="btns">
+                <button class="save" (click)="updateAuthor()">Save</button>
+                <button class="delete" (click)="deleteAuthor()">Delete</button>
+            </div>
+        </div>
+        <div class="formadd" *ngIf="!selected">
+            <input type="text" [(ngModel)]="newAuthor.name">
+            <div class="btns">
+                <button class="add" (click)="createAuthor()">Add</button>
+            </div>
+        </div>
+    </div>
+</div>

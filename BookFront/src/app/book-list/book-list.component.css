@@ -1,0 +1,52 @@
+*{
+    color:rgb(9, 11, 160);
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.header{
+    text-align: center;
+    margin:50px 0;
+}
+
+.card{
+    cursor: pointer;
+    width:250px;
+    background-color: aquamarine;
+    border: 2px solid rgb(7, 207, 34);
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: rgb(83, 83, 102);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color linear .2s;
+    margin:10px 20px;
+}
+
+.name{
+    color:rgb(9, 11, 160);
+    font-size: 26px;
+    border-bottom: 1px solid rgb(9, 11, 160);
+    margin-bottom: 10px;
+}
+
+.info{
+    color: rgb(83, 83, 102);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.type{
+    font-weight: 500;
+    color:rgb(5, 6, 56);
+}
+
+.card:hover{
+    background-color: rgb(46, 255, 109);;
+}
