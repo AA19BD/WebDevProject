@@ -1,5 +1,4 @@
-#WEB DEVELOPMENT PROJECT 2021
-#test AA
-#Nazym 
+# WEB DEVELOPMENT PROJECT 2021
+# Group members: Nazym, Abylai, Alsiher 
 
-#Test 2
+# E-commerce project
