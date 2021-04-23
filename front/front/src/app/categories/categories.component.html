@@ -1,0 +1,7 @@
+<h1>Categories</h1>
+
+<ul>
+  <li *ngFor="let c of categories">
+    <a routerLink="categories/{{c.id}}">id: {{c.id}}, name: {{c.name}}</a>
+  </li>
+</ul>
