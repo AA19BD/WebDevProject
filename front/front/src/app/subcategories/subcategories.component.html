@@ -1,0 +1,12 @@
+<app-header></app-header>
+<h1>Subcategories</h1>
+
+<ul>
+  <li *ngFor="let s of subcategories">
+    <div>
+      <a routerLink="subcategories/{{s.id}}/books">name: {{s.name}}</a>
+      <p>description: {{s.description}}</p>
+    </div>
+  </li>
+</ul>
+
